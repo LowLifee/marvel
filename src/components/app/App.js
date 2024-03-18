@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Spinner from '../spinner/Spinner';
@@ -26,6 +27,7 @@ const App = () => {
                             <Route path="/" element={<MainPage />} />
                             <Route path="/comics" element={<ComicsPage />} />
                             <Route path='/comics/:comicId' element={<SingleComicPage />} />
+                            <Route path='/characters/:charId' element={<SingleComicPage />} />
                             <Route path="*" element={< Page404 />} />
                         </Routes>
                     </Suspense>

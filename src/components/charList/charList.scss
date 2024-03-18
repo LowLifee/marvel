@@ -32,6 +32,20 @@
             box-shadow: 0 5px 20px $main-color;
             transform: translateY(-8px);
         }
+        &-enter{
+            opacity: 0;
+        }
+        &-enter-active{
+            opacity: 1;
+    transition: all 500ms ease-in-out;
+        }
+        &-exit{
+            opacity: 1;
+        }
+        &-exit-active{
+            opacity: 0;
+    transition: all 500ms ease-in-out;
+        }
     }
     &__name {
         font-weight: bold;
@@ -40,4 +54,20 @@
         text-transform: uppercase;
         color: #fff;
     }
+}
+
+.transition-group-enter{
+    opacity: 0;
+}
+
+.transition-group-active{
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+.transition-group-exit{
+    opacity: 1;
+}
+.transition-group-exit-active{
+    opacity: 0;
+    transition: all 500ms ease-in-out;
 }
